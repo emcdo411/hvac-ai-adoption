@@ -1,0 +1,24 @@
+# Core NLP and Analysis
+nltk>=3.8.1
+spacy>=3.5.0
+# Run: python -m spacy download en_core_web_sm
+
+# Numerical Computing
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Data Handling
+pandas>=2.0.0
+
+# Visualization (Optional)
+matplotlib>=3.7.0
+plotly>=5.14.0
+
+# File Processing
+openpyxl>=3.1.0  # Excel support
+python-docx>=0.8.11  # Word document support
+PyPDF2>=3.0.0  # PDF support
+
+# Utilities
+python-dateutil>=2.8.2
+pyyaml>=6.0
