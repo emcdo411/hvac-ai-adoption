@@ -1,0 +1,16 @@
+import sys
+from pathlib import Path
+
+# Add scripts to path
+sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
+
+from score_proposal import ProposalScorer
+
+def test_basic_scoring(sample_proposal):
+    """Test basic proposal scoring."""
+    scorer = ProposalScorer()
+    result = scorer.score_proposal(sample_proposal)
+    
+    assert result is not None
+    assert 'overall_score' in result or 'weighted_total' in result
+    assert result.get('overall_score', 0) >= 0
